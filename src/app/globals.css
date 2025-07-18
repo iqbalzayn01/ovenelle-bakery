@@ -7,7 +7,7 @@
   --color-brand: var(--brand);
   --color-accent: var(--accent);
   --color-highlight: var(--highlight);
-  --color-base: var(--base);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-state-success: var(--state-success);
@@ -58,7 +58,7 @@
   --brand: #7A9E9F;
   --accent: #CBD5D1;
   --highlight: #E4EDEB;
-  --base: #F8FAF9;
+  --surface: #F8FAF9;
   --foreground: #2E2E2E;
   --muted: #A5A5A5;
   --state-success: #6DAA6C;
@@ -141,5 +141,91 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .text-display-xl {
+    @apply font-serif text-[46px] leading-[120%];
+  }
+
+  .text-diplay-xl-emphasized {
+    @apply font-serif text-[46px] leading-[120%] font-bold;
+  }
+
+  .text-display-lg {
+    @apply font-serif text-[41px] leading-[120%];
+  }
+
+  .text-display-lg-emphasized {
+    @apply font-serif text-[41px] leading-[120%] font-bold;
+  }
+
+  .text-heading-xl {
+    @apply font-serif text-[36px] leading-[120%];
+  }
+
+  .text-heading-xl-emphasized {
+    @apply font-serif text-[36px] leading-[120%] font-bold;
+  }
+
+  .text-heading-lg {
+    @apply font-serif text-[32px] leading-[120%];
+  }
+
+  .text-heading-lg-emphasized {
+    @apply font-serif text-[32px] leading-[120%] font-bold;
+  }
+
+  .text-heading-md {
+    @apply font-serif text-[29px] leading-[120%];
+  }
+
+  .text-heading-md-emphasized {
+    @apply font-serif text-[29px] leading-[120%] font-bold;
+  }
+
+  .text-heading-sm {
+    @apply font-serif text-[24px] leading-[120%];
+  }
+
+  .text-heading-sm-emphasized {
+    @apply font-serif text-[24px] leading-[120%] font-bold;
+  }
+
+  .text-title-xl {
+    @apply font-serif text-[20px] leading-[120%];
+  }
+
+  .text-title-xl-emphasized {
+    @apply font-serif text-[20px] leading-[120%] font-bold;
+  }
+
+  .text-body-md {
+    @apply font-sans text-lg;
+  }
+
+  .text-body-md-emphasized {
+    @apply font-sans text-lg font-bold;
+  }
+
+  .text-body-sm {
+    @apply font-sans text-base;
+  }
+
+  .text-caption {
+    @apply font-sans text-sm;
+  }
+
+  .text-cation-emphasized {
+    @apply font-sans text-sm font-bold;
+  }
+
+  .text-label {
+    @apply font-sans text-[13px] leading-[120%];
+  }
+
+  .text-label-emphasized {
+    @apply font-sans text-[13px] leading-[120%] font-bold;
   }
 }
