@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <div className="container mx-auto px-6 md:px-10 xl:px-24 py-6 flex">
-      <div className="flex flex-col lg:flex-row w-full items-start justify-between gap-4s">
+    <div className="container mx-auto px-6 md:px-10 xl:px-24 flex">
+      <div className="flex flex-col lg:flex-row w-full items-start justify-between gap-4">
         <div className="flex-1 flex flex-col gap-4">
           <h1 className="text-diplay-xl-emphasized text-foreground">
             Calm mornings. Warm ovens. Real bread.
@@ -14,7 +14,8 @@ export default function HeroSection() {
             Ovenelle brings timeless baking into modern hands.
           </p>
         </div>
-        <div className="w-full lg:w-[65%] h-screen">
+
+        <div className="w-full lg:w-[65%] h-auto">
           <div className="grid gap-2 grid-cols-1 sm:grid-cols-4 md:grid-rows-3">
             <div className="bg-highlight rounded-3xl px-10 py-8 md:px-12 md:py-14 sm:col-span-2 sm:row-span-2 flex flex-col justify-between gap-4">
               <h2 className="text-display-xl text-foreground">

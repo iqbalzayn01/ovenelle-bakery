@@ -1,0 +1,74 @@
+[
+  {
+    "id": "golden-sourdough",
+    "title": "Golden Sourdough",
+    "descriptionShort": "Crafted through a slow fermentation process, this sourdough boasts a golden...",
+    "descriptionLong": "Our signature loaf and the heart of our bakery. Made over 36 hours, this classic sourdough has a beautiful open crumb, a satisfyingly chewy texture, and a mild, tangy flavor that pairs perfectly with everything. It's the result of patience, quality flour, and our beloved starter.",
+    "price": 7.5,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "walnut-honey",
+    "title": "Walnut Honey",
+    "descriptionShort": "Chopped walnuts folded into the dough and a touch of honey make this...",
+    "descriptionLong": "A delightful blend of earthy and sweet. We toast our walnuts to bring out their nutty flavor before folding them into our classic sourdough dough, finishing with a swirl of wildflower honey. Perfect for cheese boards or as a special breakfast treat.",
+    "price": 9.0,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "cranberry-walnut",
+    "title": "Cranberry Walnut",
+    "descriptionShort": "A crusty round boule with a chewy interior filled with dried cranberries and...",
+    "descriptionLong": "A festive and flavorful loaf packed with toasted walnuts and sweet, tart dried cranberries. Every slice offers a perfect balance of textures and tastes, making it an instant favorite for sandwiches or simply toasted with butter.",
+    "price": 9.2,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "olive-country-loaf",
+    "title": "Olive Country Loaf",
+    "descriptionShort": "A classic country-style bread filled with premium green olives and a touch of...",
+    "descriptionLong": "Take a trip to the Mediterranean with this savory loaf. We use premium, briny Kalamata olives and a hint of fresh rosemary to infuse our country-style dough with incredible flavor. It's the perfect companion for soups, salads, and pasta dishes.",
+    "price": 8.5,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "dark-chocolate-sourdough",
+    "title": "Dark Chocolate Sourdough",
+    "descriptionShort": "Creamy, custard-like center with a beautifully caramelized, rustic top.",
+    "descriptionLong": "An unexpectedly decadent treat. We fold generous chunks of high-quality 70% dark chocolate into our signature sourdough. The result is a loaf with pockets of melted chocolate and a subtle tang. It's dessert, but in bread form.",
+    "price": 9.99,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "heritage-whole-wheat",
+    "title": "Heritage Whole Wheat",
+    "descriptionShort": "Made from stone-ground whole wheat flour and long fermentation, this loaf...",
+    "descriptionLong": "A wholesome and hearty loaf with a rich, nutty flavor from 100% stone-ground whole wheat flour. Our long fermentation process makes it surprisingly soft and easy to digest. This is real, nourishing bread at its finest.",
+    "price": 7.9,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "chamomile-sourdough",
+    "title": "Chamomile Sourdough",
+    "descriptionShort": "A unique sourdough experience with chamomile tea infusion delicate, floral...",
+    "descriptionLong": "A truly unique creation for the adventurous palate. We infuse the water for our dough with calming chamomile flowers, giving the bread a delicate, floral aroma and a subtle, sweet, honey-like flavor. It's a slice of tranquility.",
+    "price": 9.5,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "cheddar-crust",
+    "title": "Cheddar Crust",
+    "descriptionShort": "This loaf fuses aged cheddar into the golden crust, giving it a crispy cheesy...",
+    "descriptionLong": "The ultimate comfort bread. Our soft, fluffy loaf is generously topped with sharp, aged cheddar cheese that bakes into an irresistible, crispy, and savory crust. Perfect for making the best grilled cheese of your life.",
+    "price": 8.8,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  },
+  {
+    "id": "honey-crust",
+    "title": "Honey Crust",
+    "descriptionShort": "Lightly brushed with wildflower honey, this sourdough offers a subtle sweetnes...",
+    "descriptionLong": "A simple loaf with a touch of magic. Our classic white bread is brushed with pure wildflower honey just before baking. This creates a thin, slightly sweet, and beautifully golden crust that complements the soft interior. A favorite among kids and adults alike.",
+    "price": 8.2,
+    "src": "https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+  }
+]
