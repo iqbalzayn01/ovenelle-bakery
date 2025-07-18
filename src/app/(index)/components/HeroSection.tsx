@@ -43,7 +43,7 @@ const SkeletonThree = () => {
         Sourdough, butter-soft and golden.
       </h4>
       <Image
-        src="https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
+        src="https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-2.jpg"
         alt="Sourdough bread"
         width={800}
         height={800}
@@ -59,14 +59,6 @@ const SkeletonFour = () => {
       <h4 className="font-serif text-[41px] md:text-[46px] text-foreground">
         Sourdough, butter-soft and golden.
       </h4>
-      <Image
-        src="https://olxwzgxszqzlanhykudq.supabase.co/storage/v1/object/public/products/product/hero-img-1.jpg"
-        alt="Sourdough bread"
-        width={800}
-        height={800}
-        priority
-        className="size-full rounded-3xl"
-      />
     </div>
   );
 };
@@ -75,12 +67,12 @@ const cards = [
   {
     id: 1,
     content: <SkeletonOne />,
-    className: 'md:col-span-4 md:row-span-2',
+    className: 'md:col-span-4 md:row-span-3',
   },
   {
     id: 2,
     content: <SkeletonTwo />,
-    className: 'col-span-4 md:row-span-1',
+    className: 'col-span-4 md:row-span-2',
   },
   {
     id: 3,
@@ -90,7 +82,7 @@ const cards = [
   {
     id: 4,
     content: <SkeletonFour />,
-    className: 'md:col-span-4 md:row-span-2',
+    className: 'md:col-span-4 md:row-span-3',
   },
 ];
 
