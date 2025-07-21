@@ -86,15 +86,10 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           ref={carouselRef}
           onScroll={checkScrollability}
         >
-          {/* <div
-            className={cn(
-              'absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l'
-            )}
-          ></div> */}
           <div
             className={cn(
-              'flex flex-row justify-start gap-4 pl-2',
-              'mx-auto max-w-7xl' // remove max-w-4xl if you want the carousel to span the full width of its container
+              'flex flex-row justify-start gap-10 pl-2',
+              'mx-auto max-w-4xl' // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -152,41 +147,33 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-auto w-56 md:w-96 flex-col items-start justify-start overflow-hidden rounded-3xl bg-highlight"
+      className="relative z-10 flex h-auto w-[390px] flex-col gap-4 p-7 md:p-12 overflow-hidden rounded-3xl bg-highlight"
     >
-      {/* <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" /> */}
-      <div className="relative z-40 p-8">
-        <motion.p
-          layoutId={layout ? `category-${card.id}` : undefined}
-          className="text-left text-heading-md-emphasized text-foreground"
-        >
-          {card.title}
-        </motion.p>
-        <motion.p
-          layoutId={layout ? `title-${card.title}` : undefined}
-          className="mt-2 max-w-xs text-left text-body-sm text-foreground"
-        >
-          {card.descriptionShort}
-        </motion.p>
-      </div>
-      <Image
-        className="w-full h-full object-cover"
+      {/* <div className="flex flex-col gap-4 p-4 md:p-12"> */}
+      <motion.p
+        layoutId={layout ? `category-${card.id}` : undefined}
+        className="text-left text-heading-md-emphasized text-foreground"
+      >
+        {card.title}
+      </motion.p>
+      <motion.p
+        layoutId={layout ? `title-${card.title}` : undefined}
+        className="mt-2 max-w-xs text-left text-body-sm text-foreground overflow-hidden text-ellipsis"
+        style={{
+          WebkitLineClamp: 1,
+          WebkitBoxOrient: 'vertical',
+          display: '-webkit-box',
+        }}
+      >
+        {card.descriptionShort}
+      </motion.p>
+      <BlurImage
         src={card.src}
         width={500}
         height={500}
-        loading="lazy"
-        decoding="async"
-        blurDataURL={typeof card.src === 'string' ? card.src : undefined}
         alt={card.title ? card.title : 'Background of a beautiful view'}
       />
-      {/* <BlurImage
-        src={card.src}
-        alt={card.title}
-        width={500}
-        height={500}
-        fill
-        className="w-full h-auto object-cover"
-      /> */}
+      {/* </div> */}
     </motion.div>
   );
 };
@@ -202,7 +189,7 @@ export const BlurImage = ({
   return (
     <Image
       className={cn(
-        'h-full w-full transition duration-300',
+        'w-full h-auto object-cover rounded-3xl transition duration-300',
         isLoading ? 'blur-sm' : 'blur-0',
         className
       )}

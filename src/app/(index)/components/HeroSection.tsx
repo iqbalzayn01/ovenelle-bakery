@@ -1,13 +1,14 @@
 import { Button } from '@/components/ui/button';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function HeroSection() {
   return (
     <div className="container mx-auto px-6 md:px-10 xl:px-24 flex">
       <div className="flex flex-col lg:flex-row w-full items-start justify-between gap-4">
         <div className="flex-1 flex flex-col gap-4">
-          <h1 className="text-diplay-xl-emphasized text-foreground">
+          <h1 className="text-display-xl-emphasized text-foreground">
             Calm mornings. Warm ovens. Real bread.
           </h1>
           <p className="text-body-md text-foreground">
@@ -38,8 +39,11 @@ export default function HeroSection() {
               <p className="text-caption text-foreground">
                 Every loaf tells a story.
               </p>
-              <Button className="bg-foreground w-fit px-6 py-[9.5px] rounded-md text-caption text-surface hover:bg-black">
-                Order Now
+              <Button
+                className="btn-default w-fit text-caption-emphasized bg-foreground hover:bg-black"
+                asChild
+              >
+                <Link href="/products">Order Now</Link>
               </Button>
             </div>
 
@@ -69,9 +73,10 @@ export default function HeroSection() {
               </p>
               <Button
                 variant="outline"
-                className="w-fit cursor-pointer bg-transparent hover:bg-foreground border border-foreground py-2 px-4 rounded-md text-caption text-foreground hover:text-surface"
+                className="w-fit bg-transparent hover:bg-foreground border border-foreground py-2 px-4 rounded-md text-caption text-foreground hover:text-surface"
+                asChild
               >
-                Find Us
+                <Link href={'/#'}> Find Us</Link>
               </Button>
             </div>
           </div>

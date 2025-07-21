@@ -145,11 +145,15 @@
 }
 
 @layer components {
+  .btn-default {
+    @apply px-6 py-[9.5px] rounded-md text-surface
+  }
+
   .text-display-xl {
     @apply font-serif text-[46px] leading-[120%];
   }
 
-  .text-diplay-xl-emphasized {
+  .text-display-xl-emphasized {
     @apply font-serif text-[46px] leading-[120%] font-bold;
   }
 
@@ -182,7 +186,7 @@
   }
 
   .text-heading-md-emphasized {
-    @apply font-serif text-[29px] leading-[120%] font-bold;
+    @apply font-serif text-[29px] leading-[120%] font-bold tracking-normal;
   }
 
   .text-heading-sm {

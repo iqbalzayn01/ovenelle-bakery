@@ -1,6 +1,7 @@
 import Header from '@/components/shared/Header';
 import HeroSection from './components/HeroSection';
 import SignatureProductSection from './components/SignatureProductSection';
+import OurStorySection from './components/OurStorySection';
 import React from 'react';
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="flex flex-col gap-[100px]">
         <HeroSection />
         <SignatureProductSection />
+        <OurStorySection />
       </main>
     </>
   );
