@@ -89,7 +89,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           <div
             className={cn(
               'flex flex-row justify-start gap-10 pl-2',
-              'mx-auto max-w-4xl' // remove max-w-4xl if you want the carousel to span the full width of its container
+              'mx-auto max-w-4xl'
             )}
           >
             {items.map((item, index) => (
@@ -149,7 +149,6 @@ export const Card = ({
       layoutId={layout ? `card-${card.title}` : undefined}
       className="relative z-10 flex h-auto w-[390px] flex-col gap-4 p-7 md:p-12 overflow-hidden rounded-3xl bg-highlight"
     >
-      {/* <div className="flex flex-col gap-4 p-4 md:p-12"> */}
       <motion.p
         layoutId={layout ? `category-${card.id}` : undefined}
         className="text-left text-heading-md-emphasized text-foreground"
@@ -173,7 +172,6 @@ export const Card = ({
         height={500}
         alt={card.title ? card.title : 'Background of a beautiful view'}
       />
-      {/* </div> */}
     </motion.div>
   );
 };
