@@ -3,6 +3,7 @@ import HeroSection from './components/HeroSection';
 import SignatureProductSection from './components/SignatureProductSection';
 import OurStorySection from './components/OurStorySection';
 import TestimonialSection from './components/TestimonialSection';
+import CallToAction from './components/CallToAction';
 import React from 'react';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <SignatureProductSection />
         <OurStorySection />
         <TestimonialSection />
+        <CallToAction />
       </main>
     </>
   );
