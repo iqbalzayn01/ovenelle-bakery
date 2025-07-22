@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Header() {
   return (
-    <div className="container mx-auto px-6 py-6 md:10 xl:px-24 flex items-center">
+    <div className="container mx-auto px-6 py-6 md:px-10 xl:px-24 flex items-center">
       <div className="w-full flex items-center justify-between">
         <Link href="/" className="text-heading-xl-emphasized text-brand">
           Ovenelle
