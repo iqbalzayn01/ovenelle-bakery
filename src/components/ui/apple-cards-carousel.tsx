@@ -88,8 +88,13 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
         >
           <div
             className={cn(
-              'flex flex-row justify-start gap-10 pl-2',
-              'mx-auto max-w-4xl'
+              'absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l'
+            )}
+          ></div>
+          <div
+            className={cn(
+              'flex flex-row justify-start gap-4 pl-4',
+              'mx-auto max-w-7xl' // remove max-w-4xl if you want the carousel to span the full width of its container
             )}
           >
             {items.map((item, index) => (
@@ -147,7 +152,7 @@ export const Card = ({
   return (
     <motion.div
       layoutId={layout ? `card-${card.title}` : undefined}
-      className="relative z-10 flex h-auto w-[390px] flex-col gap-4 p-7 md:p-12 overflow-hidden rounded-3xl bg-highlight"
+      className="relative w-[400px] h-full cursor-pointer overflow-hidden flex flex-col gap-4 justify-between p-12 bg-highlight rounded-3xl"
     >
       <motion.p
         layoutId={layout ? `category-${card.id}` : undefined}
@@ -157,7 +162,7 @@ export const Card = ({
       </motion.p>
       <motion.p
         layoutId={layout ? `title-${card.title}` : undefined}
-        className="mt-2 max-w-xs text-left text-body-sm text-foreground overflow-hidden text-ellipsis"
+        className="max-w-xs text-left text-body-sm text-foreground overflow-hidden text-ellipsis"
         style={{
           WebkitLineClamp: 1,
           WebkitBoxOrient: 'vertical',

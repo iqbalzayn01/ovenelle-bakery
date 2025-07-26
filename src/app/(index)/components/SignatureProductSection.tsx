@@ -10,7 +10,7 @@ function CardsCarousel() {
   ));
 
   return (
-    <div className="w-full h-full">
+    <div className="relative w-full h-full">
       <Carousel items={cards} />
     </div>
   );

@@ -1,10 +1,10 @@
-import Header from '@/components/shared/Header';
+import Header from '@/components/Header';
 import HeroSection from './components/HeroSection';
 import SignatureProductSection from './components/SignatureProductSection';
 import OurStorySection from './components/OurStorySection';
 import TestimonialSection from './components/TestimonialSection';
 import CallToAction from './components/CallToAction';
-import Footer from '@/components/shared/Footer';
+import Footer from '@/components/Footer';
 import React from 'react';
 
 export default function Home() {
